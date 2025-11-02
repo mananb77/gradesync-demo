@@ -1,0 +1,291 @@
+.about {
+  padding: 3rem 0;
+  min-height: 100vh;
+}
+
+.overview-section,
+.features-section,
+.technical-section,
+.setup-section,
+.use-cases,
+.resources-section,
+.license-section {
+  margin-bottom: 4rem;
+}
+
+.overview-section h2,
+.features-section h2,
+.technical-section h2,
+.setup-section h2,
+.use-cases h2,
+.resources-section h2,
+.license-section h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+/* Overview */
+.overview-content {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.overview-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.overview-content strong {
+  color: var(--text-primary);
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.feature-icon {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Technical Details */
+.tech-detail {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.tech-detail h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-content h4 {
+  color: var(--text-primary);
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.detail-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.detail-content li {
+  padding: 0.75rem 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+  line-height: 1.6;
+}
+
+.detail-content li:last-child {
+  border-bottom: none;
+}
+
+.detail-content strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Code Blocks */
+.code-block {
+  background-color: var(--code-bg);
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.code-block pre {
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.code-block code {
+  color: #e2e8f0;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+/* Setup Cards */
+.setup-card {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.setup-card h3 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Use Cases */
+.use-case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.use-case {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--primary-color);
+}
+
+.use-case h3 {
+  color: var(--primary-color);
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.use-case p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Resources */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.resource-card {
+  display: block;
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s;
+  position: relative;
+  text-decoration: none;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.resource-card svg:first-child {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.resource-card h3 {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.resource-card p {
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.external-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: var(--text-secondary);
+}
+
+/* License */
+.license-section {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border-left: 4px solid var(--accent-color);
+}
+
+.license-section p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.license-section strong {
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem 0;
+  }
+
+  .overview-section h2,
+  .features-section h2,
+  .technical-section h2,
+  .setup-section h2,
+  .use-cases h2,
+  .resources-section h2,
+  .license-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .overview-content p {
+    font-size: 1rem;
+  }
+
+  .features-grid,
+  .use-case-grid,
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .code-block code {
+    font-size: 0.75rem;
+  }
+}
