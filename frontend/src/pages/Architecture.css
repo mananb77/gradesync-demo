@@ -1,0 +1,405 @@
+.architecture {
+  padding: 3rem 0;
+  min-height: 100vh;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  overflow-x: auto;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: var(--primary-color);
+  background-color: var(--bg-tertiary);
+}
+
+.tab.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+/* Tab Content */
+.tab-content {
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-text {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* Architecture Diagram */
+.architecture-diagram {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.diagram-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service-group {
+  width: 100%;
+}
+
+.group-title {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 2px solid var(--border-color);
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card.external {
+  border-color: #f59e0b;
+}
+
+.service-card.primary {
+  border-color: var(--primary-color);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(37, 99, 235, 0.05) 100%);
+}
+
+.service-card.secondary {
+  border-color: var(--secondary-color);
+}
+
+.service-card.output {
+  border-color: var(--accent-color);
+}
+
+.service-card svg {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.service-card.external svg {
+  color: #f59e0b;
+}
+
+.service-card.output svg {
+  color: var(--accent-color);
+}
+
+.service-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.service-card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.badge.primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.badge.secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.badge.success {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.tech-list {
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.tech-list li {
+  padding: 0.25rem 0;
+  color: var(--text-secondary);
+}
+
+.tech-list li::before {
+  content: "→ ";
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Arrow */
+.arrow-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.arrow-down svg {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Flow Diagram */
+.flow-diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.flow-step {
+  display: flex;
+  gap: 1.5rem;
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.step-content h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.step-content ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.step-content li {
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.code-snippet {
+  background-color: var(--code-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+.code-snippet pre {
+  color: #e2e8f0;
+  font-size: 0.875rem;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+}
+
+/* Deployment Grid */
+.deployment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.deployment-card {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.deployment-icon {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.deployment-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.deployment-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.deployment-card ul {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.deployment-card li {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.deployment-card li:last-child {
+  border-bottom: none;
+}
+
+/* Architecture Notes */
+.architecture-notes {
+  background-color: var(--bg-primary);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+}
+
+.architecture-notes h3 {
+  text-align: center;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.note {
+  padding: 1.5rem;
+  background-color: var(--bg-secondary);
+  border-radius: 0.5rem;
+  border-left: 3px solid var(--primary-color);
+}
+
+.note h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.note p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .architecture {
+    padding: 2rem 0;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .service-cards,
+  .deployment-grid,
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-step {
+    flex-direction: column;
+  }
+
+  .step-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+}
