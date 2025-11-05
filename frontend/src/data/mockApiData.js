@@ -66,8 +66,8 @@ export const apiEndpoints = [
     description: 'Returns all assignments with their IDs and metadata from the course',
     parameters: [],
     response: {
-      course_id: 831412,
-      course_name: "CS 10: The Beauty and Joy of Computing",
+      course_id: 831412, // Example course ID
+      course_name: "CS 10: The Beauty and Joy of Computing (Example)",
       semester: "Fall 2024",
       total_assignments: 15,
       assignments: [
@@ -143,7 +143,7 @@ export const apiEndpoints = [
     description: 'Comprehensive endpoint that fetches grades for all assignments and all students',
     parameters: [],
     response: {
-      course_id: 831412,
+      course_id: 831412, // Example course ID
       total_students: 487,
       total_assignments: 15,
       last_updated: "2024-11-02T10:30:00Z",
@@ -213,8 +213,8 @@ export const apiEndpoints = [
     description: 'Fetches the complete gradebook from PrairieLearn with question-level assessment data',
     parameters: [],
     response: {
-      course_id: 155812,
-      course_name: "CS 10 - PrairieLearn Assessments",
+      course_id: 155812, // Example course ID
+      course_name: "CS 10 - PrairieLearn Assessments (Example)",
       total_students: 487,
       total_assessments: 12,
       last_sync: "2024-11-02T03:00:00Z",

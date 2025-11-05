@@ -82,7 +82,7 @@ const About = () => {
                 <li><strong>Type:</strong> Scheduled cloud function</li>
                 <li><strong>Frequency:</strong> Every 6 hours via Google Cloud Scheduler</li>
                 <li><strong>Function:</strong> Fetches all assignment grades and writes to Google Sheets</li>
-                <li><strong>Course ID:</strong> 831412 (CS10 Fall 2024)</li>
+                <li><strong>Example Course ID:</strong> 831412</li>
               </ul>
 
               <h4>PrairieLearn Integration Service</h4>
@@ -90,7 +90,7 @@ const About = () => {
                 <li><strong>Type:</strong> Scheduled cloud function</li>
                 <li><strong>Frequency:</strong> Daily at 3:00 AM Pacific Time</li>
                 <li><strong>Function:</strong> Fetches question-level assessment data, creates pivot tables</li>
-                <li><strong>Course ID:</strong> 155812</li>
+                <li><strong>Example Course ID:</strong> 155812</li>
                 <li><strong>Special Feature:</strong> Zone-based question sorting and aggregation</li>
               </ul>
 

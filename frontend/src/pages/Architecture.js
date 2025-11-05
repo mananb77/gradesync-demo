@@ -53,13 +53,13 @@ const Architecture = () => {
                     <div className="service-card external">
                       <Database size={32} />
                       <h4>Gradescope</h4>
-                      <span className="badge">Course ID: 831412</span>
+                      <span className="badge">Example Course ID: 831412</span>
                       <p>Automated assignment grading and submission management</p>
                     </div>
                     <div className="service-card external">
                       <FileText size={32} />
                       <h4>PrairieLearn</h4>
-                      <span className="badge">Course ID: 155812</span>
+                      <span className="badge">Example Course ID: 155812</span>
                       <p>Interactive CS assessments with question-level tracking</p>
                     </div>
                     <div className="service-card external">
